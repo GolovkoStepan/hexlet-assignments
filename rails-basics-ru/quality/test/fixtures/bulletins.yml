@@ -1,0 +1,7 @@
+DEFAULTS: &DEFAULTS
+  title: Bulletin
+  body: Bulletin body
+  published: true
+
+one:
+  <<: *DEFAULTS
