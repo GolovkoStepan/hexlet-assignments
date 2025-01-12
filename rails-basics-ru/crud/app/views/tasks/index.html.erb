@@ -1,0 +1,12 @@
+<h1>Tasks#index</h1>
+
+<%= link_to 'New Task', new_task_path, class: 'btn btn-primary' %>
+
+<div class="py-2"></div>
+
+<% @tasks.each do |task| %>
+  <h2><%= link_to task.name, task_path(task) %></h2>
+  <p><%= task.description %></p>
+  <small><i><%= task.creator %>, <%= task.created_at.in_time_zone('Moscow').strftime("%H:%m %d.%m.%y") %></i></small>
+  <hr>
+<% end %>
