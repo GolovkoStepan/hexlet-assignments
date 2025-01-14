@@ -1,0 +1,34 @@
+en:
+  posts:
+    page_title: Posts
+    table_title: List of all posts
+
+    edit:
+      title: Edit post
+    destroy:
+      success: Post was destroyed.
+      title: Delete post
+      confirm: Are you sure?
+    create:
+      success: Post was created.
+    new:
+      title: New Post
+    update:
+      success: Post was updated.
+    show:
+      body: Body
+      comments: Comments
+
+    comments:
+      count:
+        zero: No comments
+        one: "%{count} comment"
+        other: "%{count} comments"
+      edit:
+        title: Editing comment
+
+      create:
+        success: Comment was created.
+
+      update:
+        success: Comment was updated.
