@@ -1,0 +1,8 @@
+.nested-fields
+  = f.input :institution
+  = f.input :faculty
+  = f.input :begin_date, as: :date, start_year: Date.today.year - 90,
+    discard_day: true, order: %i[year month]
+  = f.input :end_date, as: :date, start_year: Date.today.year - 90,
+    discard_day: true, order: %i[year month]
+  = link_to_remove_association 'remove education', f
